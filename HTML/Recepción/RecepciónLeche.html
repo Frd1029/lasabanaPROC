@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECEPCIÓN</title>
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Dashboard -->
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li class="active"><a href="#">Recepción</a>
+                    <ul class="submenu">
+                        <li><a href="#" class="active">Recepción de leche</a></li>
+                        <li><a href="#">Recepción de insumos</a></li>
+                        <li><a href="#">Recepción de envases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Producción</a></li>
+                <li><a href="#">Envasado</a></li>
+                <li><a href="#">Rotulado</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div class="content">
+            <h1>RECEPCIÓN DE LECHE</h1>
+            <div class="form-container">
+                <h2>Ingresar datos de Leche</h2>
+                <form class="horizontal-form">
+                    <!-- Fecha de Recepción -->
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Recepción</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <!-- Lote de Ingreso -->
+                    <div class="form-group">
+                        <label for="lote">Lote de Ingreso</label>
+                        <input type="text" id="lote" name="lote" placeholder="Ingresa el lote de ingreso" required>
+                    </div>
+
+                    <!-- Proveedor -->
+                    <div class="form-group">
+                        <label for="proveedor">Proveedor</label>
+                        <select id="proveedor" name="proveedor" required>
+                            <option value="" disabled selected>Selecciona un proveedor</option>
+                            <option value="Proveedor1">Proveedor 1</option>
+                            <option value="Proveedor2">Proveedor 2</option>
+                            <option value="Proveedor3">Proveedor 3</option>
+                        </select>
+                    </div>
+
+                    <!-- Cantidad en Litros -->
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad (Litros)</label>
+                        <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad de litros" required>
+                    </div>
+
+                    <!-- Pruebas Organolépticas -->
+                    <div class="form-group organolepticas-container">
+                        <h3>Pruebas Organolépticas</h3>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="color" name="color">
+                            <label for="color">Color</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="olor" name="olor">
+                            <label for="olor">Olor</label>
+                        </div>
+                        <!-- Temperatura dentro de Pruebas Organolépticas -->
+                        <div class="form-group">
+                            <label for="temperatura">Temperatura (°C)</label>
+                            <input type="number" id="temperatura" name="temperatura" placeholder="Temperatura en °C" required>
+                        </div>
+                    </div>
+
+                    <!-- Tanque -->
+                    <div class="form-group">
+                        <label for="tanque">Tanque</label>
+                        <select id="tanque" name="tanque" required>
+                            <option value="" disabled selected>Selecciona un tanque</option>
+                            <option value="Tanque1">Tanque 1</option>
+                            <option value="Tanque2">Tanque 2</option>
+                            <option value="Tanque3">Tanque 3</option>
+                            <option value="Tanque4">Tanque 4</option>
+                        </select>
+                    </div>
+
+                    <!-- Observaciones -->
+                    <div class="form-group">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Ingresa tus observaciones aquí..."></textarea>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <div class="form-group button-container">
+                        <button type="submit">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
