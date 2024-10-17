@@ -133,9 +133,29 @@ body {
     border-radius: 8px;
 }
 
-.organolepticas-container h3 {
+.organolepticas-container h2 {
     margin-bottom: 15px;
     color: #34495e;
+}
+
+.test-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.test-group{
+    height: 50px;
+}
+
+.checkbox-options{
+    border: 1px solid #ccc;
+    background-color:#ccc;
+    border-radius: 8px;
+    padding: 10px;
+
+    grid-row: 1/5;
 }
 
 .checkbox-container {
@@ -143,6 +163,7 @@ body {
     align-items: center;
     margin: 10px;
     cursor: pointer;
+    width: 100%;
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -173,7 +194,7 @@ body {
 
 .checkbox-container input[type="checkbox"]:checked + label:before {
     background-color: #1abc9c;
-    border-color: #34495e;
+    border-color: #ecf0f1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -225,7 +246,6 @@ button[type="submit"]:hover {
 .radio-container label {
     display: inline-block;
     position:relative;
-    padding-left: 35px;
     cursor: pointer;
     font-size: 30px;
     user-select: none;
