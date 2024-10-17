@@ -1,4 +1,5 @@
-/* General styles */
+/* DASHBOARD INICIO */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Elimina cualquier margen predeterminado */
-    padding: 0;
 }
 
 .container {
@@ -44,7 +43,30 @@ body {
     border-radius: 5px;
 }
 
+.submenu {
+    list-style-type: none;
+    padding-left: 20px;
+    display: none;
+}
+
 .sidebar ul li.active > a {
+    background-color: #1abc9c;
+}
+
+.sidebar ul li.active .submenu {
+    display: block;
+}
+
+.sidebar ul li .submenu li a {
+    background-color: #34495e;
+    padding: 8px;
+}
+
+.sidebar ul li .submenu li a:hover {
+    background-color: #1abc9c;
+}
+
+.sidebar ul li a:hover {
     background-color: #1abc9c;
 }
 
@@ -59,7 +81,6 @@ body {
     text-align: center;
 }
 
-/* Elimina espacio en blanco */
 .form-container {
     max-width: 100%;
     margin: 0 auto;
@@ -68,19 +89,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
-    flex-direction: column; /* Alinea verticalmente los elementos */
-    justify-content: space-between; /* Espacio entre los elementos */
-    height: auto; /* Ajusta la altura al contenido */
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: auto;
 }
 
-/* Ajustar el título del formulario */
+
 .form-container h2 {
     color: #34495e;
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* Evitar espacio en blanco arriba del formulario */
+
 .horizontal-form {
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +127,7 @@ body {
     border-radius: 5px;
 }
 
-/* Botón Registrar ocupando todo el ancho */
+
 .form-group.button-container {
     margin-top: auto;
     width: 100%;

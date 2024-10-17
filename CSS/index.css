@@ -1,4 +1,5 @@
-/* General styles (remain unchanged) */
+/* DASHBOARD INICIO */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +43,6 @@ body {
     border-radius: 5px;
 }
 
-/* Submenu styles */
 .submenu {
     list-style-type: none;
     padding-left: 20px;
@@ -69,6 +69,8 @@ body {
 .sidebar ul li a:hover {
     background-color: #1abc9c;
 }
+
+/* DASHBOARD FINAL */
 
 .content {
     flex: 1;
@@ -121,7 +123,6 @@ body {
     border-radius: 5px;
 }
 
-/* Estilo para la caja gris de Pruebas Organolépticas */
 .organolepticas-container {
     flex: 1;
     min-width: 48%;
@@ -145,13 +146,13 @@ body {
 }
 
 .checkbox-container input[type="checkbox"] {
-    display: none; /* Esconder el checkbox nativo */
+    display: none;
 }
 
 .checkbox-container label {
     display: inline-block;
     position: relative;
-    padding-left: 35px; /* Espacio para el cuadrado */
+    padding-left: 35px;
     cursor: pointer;
     font-size: 16px;
     user-select: none;
@@ -176,12 +177,12 @@ body {
 }
 
 .checkbox-container input[type="checkbox"]:checked + label:after {
-    content: '✓'; /* Aquí añadimos la palomita */
+    content: '✓';
     position: absolute;
     left: 8px;
     top: 2px;
     font-size: 20px;
-    color: white; /* Color de la palomita */
+    color: white;
 }
 
 .checkbox-container label:hover:before {
