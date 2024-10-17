@@ -12,7 +12,6 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
 }
 
 .sidebar {
@@ -157,6 +156,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     user-select: none;
+    padding-top: 6px;
 }
 
 .checkbox-container label:before {
@@ -173,7 +173,7 @@ body {
 
 .checkbox-container input[type="checkbox"]:checked + label:before {
     background-color: #1abc9c;
-    border-color: #1abc9c;
+    border-color: #34495e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -209,4 +209,47 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #16a085;
 }
+
+/* RADIO BUTTON INICIO*/
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+    display: none;
+}
+
+.radio-container label {
+    display: inline-block;
+    position:relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+}
+
+.radio-container label:before {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    content: '';
+    display: inline-flex;
+    height: 25px;
+    line-height: 25px;
+    margin: 15px;
+    text-align: center;
+    width: 25px;
+    
+}
+
+.radio-container input[type="radio"]:checked + label:before {
+    background-color: #1abc9c;
+    border-color: #34495e;
+}
+
+/* RADIO BUTTON FINAL*/
+
 
