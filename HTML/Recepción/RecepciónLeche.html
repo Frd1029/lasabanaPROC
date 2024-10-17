@@ -16,7 +16,7 @@
                 <li class="active"><a href="#">Recepción</a>
                     <ul class="submenu">
                         <li><a href="#" class="active">Recepción de leche</a></li>
-                        <li><a href="#">Recepción de insumos</a></li>
+                        <li><a href="RecepciónInsumos.html">Recepción de insumos</a></li>
                         <li><a href="#">Recepción de envases</a></li>
                     </ul>
                 </li>
@@ -65,19 +65,64 @@
                     <!-- Pruebas Organolépticas -->
                     <div class="form-group organolepticas-container">
                         <h3>Pruebas Organolépticas</h3>
+
+                        <!-- Color -->
                         <div class="checkbox-container">
                             <input type="checkbox" id="color" name="color">
                             <label for="color">Color</label>
                         </div>
+
+                        <!-- Olor -->
                         <div class="checkbox-container">
                             <input type="checkbox" id="olor" name="olor">
                             <label for="olor">Olor</label>
                         </div>
+
+                        <!-- Apariencia -->
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="apariencia" name="apariencia">
+                            <label for="apariencia">Apariencia</label>
+                        </div>
+
+                        <!-- Libre de residuos -->
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="residuos" name="residuos">
+                            <label for="residuos">Libre de residuos</label>
+                        </div>
+
+                        <!-- Acidez-->
+                        <div class="form-group">
+                            <label for="acidez">Acidez (%)</label>
+                            <input type="number" id="acidez" name="acidez" placeholder="Acidez (%)" step="0.01" required>
+                        </div>
+
+                        <!-- Densidad-->
+                        <div class="form-group">
+                            <label for="densidad">Densidad (g/ml)</label>
+                            <input type="number" id="densidad" name="densidad" placeholder="Densidad (g/ml)" step="0.001" required>
+                        </div>
+
+                        <!-- Alcohol -->
+                        <div class="form-group">
+                            <label for="alcohol">Alcohol</label>
+                            
+                            <div class="radio-container">
+                                <input type="radio" name="alcohol" id="plus" value="+" required>
+                                <label for="plus">+</label>
+
+                                <input type="radio" name="alcohol" id="minus" value="-" required>
+                                <label for="minus">-</label>
+                            </div>
+
+                        </div>
+
+                        <!-- Input: Temperatura (número) -->
                         <div class="form-group">
                             <label for="temperatura">Temperatura (°C)</label>
                             <input type="number" id="temperatura" name="temperatura" placeholder="Temperatura en °C" required>
                         </div>
                     </div>
+
 
                     <!-- Tanque -->
                     <div class="form-group">
