@@ -128,6 +128,15 @@ body {
     border-radius: 5px;
 }
 
+button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .organolepticas-container {
     flex: 1;
     min-width: 48%;
@@ -148,11 +157,6 @@ body {
     grid-template-columns: 1fr 1fr;
 
 }
-
-/* .test-group {
-
-} */
-
 
 .test-group:has(input[type="radio"]) {
     border-radius: 8px;
@@ -282,3 +286,85 @@ button[type="submit"]:hover {
 }
 
 /* RADIO BUTTON FINAL*/
+
+
+/* BARRA DE BUSQUEDA INICIO*/
+.barra-busqueda {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.barra-busqueda input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.agregar{
+    grid-column: 1/3;
+}
+/* BARRA DE BUSQUEDA FINAL*/
+
+/* TABLA INICIO*/
+
+.tabla-proveedores {
+    margin-top: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.editar, .ver, .eliminar {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.editar {
+    background-color: #f39c12; 
+    color: white;
+    width: 100%;
+}
+
+.ver {
+    background-color: #2980b9;
+    color: white;
+    grid-column: 1/3;
+    width: 100%;
+}
+
+.eliminar {
+    background-color: #c0392b;
+    color: white;
+    width: 100%;
+}
+
+/* TABLA FINAL*/
