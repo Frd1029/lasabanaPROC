@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proveedores</title>
-    <link rel="stylesheet" href="/CSS/provedores.css">
+    <!-- <link rel="stylesheet" href="../../css/provedores.css"> -->
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
 
     <div class="container">
+        <!-- Dashboard -->
         <div class="sidebar">
             <h2>Menú</h2>
             <ul>
@@ -27,19 +29,19 @@
             </ul>
         </div>
 
-        <div class="main-content">
-            <header>
-                <h1>Proveedores</h1>
-            </header>
-
-            <main>
-                <div class="tabla-proveedores">
-                    <div class="barra-busqueda">
-                        <input type="text" id="busqueda" placeholder="Buscar proveedor...">
+        <!-- Formulario de Registro -->
+        <div class="content">
+                <h1>PROVEEDORES</h1>
+                <!-- <div class="tabla-proveedores"> -->
+                <div class="form-container">
+                    <h2>Buscar proveedor</h2>
+                    <!-- Barra de busqueda -->
+                    <div class="form-group barra-busqueda">
+                        <input type="text" placeholder="Ingresa nombre del proveedor..">
+                        <button>Buscar</button>
+                        <button class="agregar" href="/HTML/Recepción/aggproveedores.html">Agregar nuevo</button>
                     </div>
-
-                    <button href="/HTML/Recepción/aggproveedores.html" id="agregar-nuevo">Agregar nuevo</button></div>
-
+                    <h2>Proveedores:</h2>
                     <table>
                         <thead>
                             <tr>
@@ -62,11 +64,10 @@
                                 <td>2023-01-15</td>
                                 <td>Calle 123</td>
                                 <td>proveedor1@example.com</td>
-                                <td>
-                                    <button class="editar">Editar</button>
+                                <td class="actions">
                                     <button class="ver">Ver</button>
+                                    <button class="editar">Editar</button>
                                     <button class="eliminar">Eliminar</button>
-                                    <button class="actualizar">Actualizar</button>
                                 </td>
                             </tr>
                             <tr>
@@ -77,21 +78,15 @@
                                 <td>2023-02-20</td>
                                 <td>Carrera 456</td>
                                 <td>proveedor2@example.com</td>
-                                <td>
-                                    <button class="editar">Editar</button>
+                                <td class="actions">
                                     <button class="ver">Ver</button>
+                                    <button class="editar">Editar</button>
                                     <button class="eliminar">Eliminar</button>
-                                    <button class="actualizar">Actualizar</button>
                                 </td>
                             </tr>
                             </tbody>
                     </table>
                 </div>
-            </main>
-
-            <footer>
-                <p>&copy; ...</p>
-            </footer>
         </div>
     </div>
 
