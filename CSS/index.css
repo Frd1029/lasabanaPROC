@@ -292,7 +292,7 @@ button[type="submit"]:hover {
 .barra-busqueda {
     display: grid;
     grid-template-columns: 8fr 1fr;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     gap: 10px;
 }
 
