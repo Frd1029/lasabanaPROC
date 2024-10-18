@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recepción Insumos</title>
-    <link rel="stylesheet" href="../../css/insumos.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
 
@@ -78,6 +78,39 @@
                             <option value="Proveedor2">Proveedor 2</option>
                             <option value="Proveedor3">Proveedor 3</option>
                         </select>
+                    </div>
+
+                    <!-- Calidad -->
+                    <div class="form-group test-group">
+                        <label for="quality">Calidad</label>
+                        <div class="radio-container">
+                            <input type="radio" name="quality" id="cumple" value="cumple" required>
+                            <label for="cumple">Cumple</label>
+
+                            <input type="radio" name="quality" id="no-cumple" value="No Cumple" required>
+                            <label for="no-cumple">No Cumple</label>
+                        </div>
+                    </div>
+
+                    <!-- Estado -->
+                    <div class="form-group test-group">
+                        <label for="status">Estado</label>
+                        <div class="radio-container">
+                            <input type="radio" name="status" id="good" value="Buena" required>
+                            <label for="good">Buena</label>
+
+                            <input type="radio" name="status" id="regular" value="Regular" required>
+                            <label for="regular">Regular</label>
+
+                            <input type="radio" name="status" id="bad" value="Malo" required>
+                            <label for="bad">Malo</label>
+                        </div>
+                    </div>
+
+                    <!-- Observaciones -->
+                    <div class="form-group">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Ingresa tus observaciones aquí..."></textarea>
                     </div>
 
                     <!-- Botón de envío -->

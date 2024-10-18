@@ -12,6 +12,7 @@ body {
 
 .container {
     display: flex;
+    min-height: 100vh;
 }
 
 .sidebar {
@@ -48,7 +49,7 @@ body {
     display: none;
 }
 
-.sidebar ul li.active > a {
+.sidebar ul li.active>a {
     background-color: #1abc9c;
 }
 
@@ -98,9 +99,8 @@ body {
 }
 
 .horizontal-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .form-group {
@@ -127,7 +127,7 @@ body {
     flex: 1;
     min-width: 48%;
     background-color: #f0f0f0;
-    padding: 15px;
+    padding: 15px 0px;
     margin: 10px 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -138,20 +138,27 @@ body {
     color: #34495e;
 }
 
-.test-container{
-    width: 100%;
+.test-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+
 }
 
-.test-group{
-    height: 50px;
-}
+/* .test-group {
 
-.checkbox-options{
+} */
+
+
+.test-group:has(input[type="radio"]) {
+    border-radius: 8px;
+    padding: 10px 10px 0px;
     border: 1px solid #ccc;
-    background-color:#ccc;
+    background-color: #ecf0f1;
+}
+
+.checkbox-options {
+    border: 1px solid #ccc;
+    background-color: #ccc;
     border-radius: 8px;
     padding: 10px;
 
@@ -192,13 +199,13 @@ body {
     border-radius: 5px;
 }
 
-.checkbox-container input[type="checkbox"]:checked + label:before {
+.checkbox-container input[type="checkbox"]:checked+label:before {
     background-color: #1abc9c;
     border-color: #ecf0f1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.checkbox-container input[type="checkbox"]:checked + label:after {
+.checkbox-container input[type="checkbox"]:checked+label:after {
     content: '✓';
     position: absolute;
     left: 8px;
@@ -245,9 +252,9 @@ button[type="submit"]:hover {
 
 .radio-container label {
     display: inline-block;
-    position:relative;
+    position: relative;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
     user-select: none;
 }
 
@@ -259,17 +266,14 @@ button[type="submit"]:hover {
     display: inline-flex;
     height: 25px;
     line-height: 25px;
-    margin: 15px;
+    margin: 0px 15px 0px 15px;
     text-align: center;
     width: 25px;
-    
 }
 
-.radio-container input[type="radio"]:checked + label:before {
+.radio-container input[type="radio"]:checked+label:before {
     background-color: #1abc9c;
     border-color: #34495e;
 }
 
 /* RADIO BUTTON FINAL*/
-
-
