@@ -62,12 +62,17 @@ body {
     padding: 8px;
 }
 
+
 .sidebar ul li .submenu li a:hover {
     background-color: #1abc9c;
 }
 
 .sidebar ul li a:hover {
     background-color: #1abc9c;
+}
+
+.sidebar ul li .submenu li .act{
+    background-color: #127763;
 }
 
 /* DASHBOARD FINAL */
