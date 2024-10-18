@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepción de Envases</title>
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Dashboard -->
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li class="active"><a href="#">Recepción</a>
+                    <ul class="submenu">
+                        <li><a href="#" class="active">Recepción de leche</a></li>
+                        <li><a href="#">Recepción de insumos</a></li>
+                        <li><a href="#">Recepción de envases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Producción</a></li>
+                <li><a href="#">Envasado</a></li>
+                <li><a href="#">Rotulado</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div class="content">
+            <h1>RECEPCIÓN DE ENVASES</h1>
+            <div class="form-container">
+                <h2>Ingresar datos del envase</h2>
+                <form class="horizontal-form">
+                    
+                    <!-- Fecha de Recepción -->
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Recepción</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <!-- Proveedor -->
+                    <div class="form-group">
+                        <label for="proveedor">Proveedor</label>
+                        <select id="proveedor" name="proveedor" required>
+                            <option value="" disabled selected>Selecciona un proveedor</option>
+                            <option value="Proveedor1">Proveedor 1</option>
+                            <option value="Proveedor2">Proveedor 2</option>
+                            <option value="Proveedor3">Proveedor 3</option>
+                        </select>
+                    </div>
+
+                    <!-- Lote de Ingreso -->
+                    <div class="form-group">
+                        <label for="lote">Lote / Referencia</label>
+                        <input type="text" id="lote" name="lote" placeholder="Ingresa el lote de ingreso" required>
+                    </div>
+
+                    <!-- Envase -->
+                    <div class="form-group">
+                        <label for="envase">Tipo de envase</label>
+                        <select id="envase" name="envase" required>
+                            <option value="" disabled selected>Selecciona un envase</option>
+                            <option value="envase1">ENVASE1</option>
+                            <option value="envase2">ENVASE2</option>
+                            <option value="envase">ENVASE3</option>
+                        </select>
+                    </div>
+
+                    <!-- Cantidad en Unidades -->
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad (UND)</label>
+                        <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad de unidades" required>
+                    </div>
+
+                    <!-- Material del Envase -->
+                    <div class="form-group">
+                        <label for="envase">Material del envase</label>
+                        <select id="envase" name="envase" required>
+                            <option value="" disabled selected>Selecciona un material</option>
+                            <option value="material1">MATERIAL1</option>
+                            <option value="material2">MATERIAL2</option>
+                            <option value="material3">MATERIAL3</option>
+                        </select>
+                    </div>
+
+                    <!-- Estado -->
+                    <div class="form-group test-group">
+                        <label for="status">Estado</label>
+                        <div class="radio-container">
+                            <input type="radio" name="status" id="good" value="Buena" required>
+                            <label for="good">Buena</label>
+
+                            <input type="radio" name="status" id="regular" value="Regular" required>
+                            <label for="regular">Regular</label>
+
+                            <input type="radio" name="status" id="bad" value="Malo" required>
+                            <label for="bad">Malo</label>
+                        </div>
+                    </div>
+
+                    <!-- Fecha de Vencimiento -->
+                    <div class="form-group">
+                        <label for="vence">Fecha de Vencimiento</label>
+                        <input type="date" id="vence" name="vence" required>
+                    </div>
+
+                    <!-- Calidad -->
+                    <div class="form-group test-group">
+                        <label for="quality">Calidad</label>
+                        <div class="radio-container">
+                            <input type="radio" name="quality" id="cumple" value="cumple" required>
+                            <label for="cumple">Cumple</label>
+
+                            <input type="radio" name="quality" id="no-cumple" value="No Cumple" required>
+                            <label for="no-cumple">No Cumple</label>
+                        </div>
+                    </div>
+
+                    <!-- Estado -->
+                    <div class="form-group test-group">
+                        <label for="status">Estado</label>
+                        <div class="radio-container">
+                            <input type="radio" name="status" id="good" value="Buena" required>
+                            <label for="good">Buena</label>
+
+                            <input type="radio" name="status" id="regular" value="Regular" required>
+                            <label for="regular">Regular</label>
+
+                            <input type="radio" name="status" id="bad" value="Malo" required>
+                            <label for="bad">Malo</label>
+                        </div>
+                    </div>
+
+                    <!-- Daños Visibles -->
+                    <div class="form-group test-group">
+                        <label for="damage">Daños Visibles</label>
+                        
+                        <div class="radio-container">
+                            <input type="radio" name="damage" id="yes" value="Si" required>
+                            <label for="yes">Si</label>
+
+                            <input type="radio" name="damage" id="no" value="No" required>
+                            <label for="no">No</label>
+                        </div>
+
+                    </div>
+
+                    <!-- Observaciones -->
+                    <div class="form-group">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Ingresa tus observaciones aquí..."></textarea>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <div class="form-group button-container">
+                        <button type="submit">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
