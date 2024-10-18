@@ -1,0 +1,154 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #2c3e50; /* Color de fondo del body de plantilla.css */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos del formulario */
+.login-box {
+    position: relative;
+    padding: 40px;
+    width: 350px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5em; 
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #1abc9c; /* Color verde de plantilla.css */
+    font-size: 12px;
+}
+
+.user-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+    accent-color: #1abc9c; /* Color verde de plantilla.css */
+}
+
+.checkbox label {
+    color: #333;
+    margin-left: 5px;
+}
+
+.checkbox img {
+    height: 60px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Estilos del botón */
+.login-box button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff; 
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px; 
+    background-color: #1abc9c; /* Color verde de plantilla.css */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    opacity: 0.9;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.options a {
+    color: #1abc9c; /* Color verde de plantilla.css */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #1abc9c; /* Color verde de plantilla.css */
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Estilos para el nombre de la empresa */
+.container h1 { 
+    font-size: 3em; 
+    font-family: 'Arial Black', sans-serif; 
+    margin-bottom: 20px; 
+    color: #fff; /* Color blanco para el título */
+}
