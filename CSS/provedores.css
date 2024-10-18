@@ -1,0 +1,353 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.submenu {
+    list-style-type: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.sidebar ul li.active > a {
+    background-color: #1abc9c;
+}
+
+.sidebar ul li.active .submenu {
+    display: block;
+}
+
+.sidebar ul li .submenu li a {
+    background-color: #34495e;
+    padding: 8px;
+}
+
+.sidebar ul li .submenu li a:hover {
+    background-color: #1abc9c;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1abc9c;
+}
+
+/* Estilos del formulario */
+.content {
+    flex-grow: 1; /* El contenido principal ocupa el espacio restante */
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.horizontal-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.horizontal-form input,
+.horizontal-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.horizontal-form button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilos generales (copiar de plantilla.css) */
+
+/* Estilos generales (copiar de plantilla.css) */
+
+/* Estilos adicionales para la tabla */
+.tabla-proveedores {
+    margin-top: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.barra-busqueda {
+    margin-bottom: 10px;
+}
+
+.barra-busqueda input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#agregar-nuevo {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.editar, .ver, .eliminar, .actualizar {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.editar {
+    background-color: #f39c12; /* Amarillo */
+    color: white;
+}
+
+.ver {
+    background-color: #2980b9; /* Azul */
+    color: white;
+}
+
+.eliminar {
+    background-color: #c0392b; /* Rojo */
+    color: white;
+}
+
+.actualizar {
+    background-color: #27ae60; /* Verde */
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos generales (copiar de plantilla.css) */
+
+/* Estilos adicionales para el formulario */
+.registro-box {
+    position: relative;
+    padding: 40px;
+    width: 400px; 
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.registro-box h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em; 
+    color: #333; /* Color de texto más oscuro */
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input,
+.user-box select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    border: none;
+    outline: none; /* Se quita el borde inferior */
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label,
+.user-box select:focus ~ label,
+.user-box select:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #1abc9c;
+    font-size: 12px;
+}
+
+/* Estilos del botón */
+.registro-box button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff; 
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px; 
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registro-box button:hover {
+    opacity: 0.9;
+}
+
+/* Estilos generales (copiar de plantilla.css) */
+
+/* Estilos adicionales para el formulario */
+.registro-box {
+    position: relative;
+    padding: 40px;
+    width: 400px; 
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.registro-box h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em; 
+    color: #333;
+}
+
+/* Estilos para los recuadros */
+.recuadro {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.recuadro input,
+.recuadro select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.recuadro label {
+    position: absolute;
+    top: 10px; /* Ajustar la posición del label */
+    left: 10px;
+    padding: 0;
+    font-size: 14px;
+    color: #999;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.recuadro input:focus ~ label,
+.recuadro input:valid ~ label,
+.recuadro select:focus ~ label,
+.recuadro select:valid ~ label {
+    top: -10px; /* Ajustar la posición del label */
+    left: 10px;
+    font-size: 12px;
+    color: #1abc9c;
+}
+
+/* Estilos del botón */
+.registro-box button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff; 
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px; 
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registro-box button:hover {
+    opacity: 0.9;
+}

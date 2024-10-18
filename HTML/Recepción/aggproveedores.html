@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar proveedor</title>
+    <link rel="stylesheet" href="/CSS/provedores.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li class="active"><a href="#">Recepción</a>
+                    <ul class="submenu">
+                        <li><a href="/HTML/Recepción/RecepcionLeche.html">Recepción de leche</a></li>
+                        <li><a class="act" href="/HTML/Recepción/RecepcionInsumos.html">Recepción de insumos</a></li>
+                        <li><a href="#">Recepción de envases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Producción</a></li>
+                <li><a href="#">Envasado</a></li>
+                <li><a href="#">Rotulado</a></li>
+                <li><a href="/HTML/Recepción/Registroproveedores.html">Proveedores</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>Agregar Proveedor</h1>
+            </header>
+
+            <main>
+                <div class="form-container">
+                    <form>
+                        <div class="recuadro">
+                            <input type="text" name="id_proveedor" required="">
+                            <label>ID Proveedor</label>
+                        </div>
+                        <div class="recuadro">
+                            <input type="text" name="nombre" required="">
+                            <label>Nombre del proveedor</label>
+                        </div>
+                        <div class="recuadro">
+                            <input type="text" name="contacto" required="">
+                            <label>Contacto del proveedor</label>
+                        </div>
+                        <div class="recuadro">
+                            <input type="text" name="insumo" required="">
+                            <label>Nombre del insumo</label>
+                        </div>
+                        <div class="recuadro">
+                            <input type="date" name="fecha_ingreso" required="">
+                            <label>Fecha de Ingreso</label>
+                        </div>
+                        <div class="recuadro">
+                            <input type="text" name="direccion" required="">
+                            <label>Dirección</label>
+                        </div>
+                        <div class="recuadro">
+                            <input type="email" name="correo" required="">
+                            <label>Correo</label>
+                        </div>
+                        <button id="agregar-nuevo" type="submit">
+                            Agregar
+                        </button>
+                    </form>
+                </div>
+            </main>
+
+            <footer>
+                <p>&copy; 2023 La Sabana S.A.S.</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
