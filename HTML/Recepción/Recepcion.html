@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepción de Leche</title>
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Dashboard -->
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li class="active"><a href="#">Recepción</a>
+                    <ul class="submenu">
+                        <li><a class="act" href="#">Recepción de leche</a></li>
+                        <li><a href="RecepcionInsumos.html">Recepción de insumos</a></li>
+                        <li><a href="RecepcionEnvases.html">Recepción de envases</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Producción</a></li>
+                <li><a href="#">Envasado</a></li>
+                <li><a href="#">Rotulado</a></li>
+                <li><a href="../Proveedores/Registroproveedores.html">Proveedores</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </div>
+
+        <!-- Menu -->
+        <div class="content">
+            <h1>RECEPCIÓN</h1>
+            <div class="form-container">
+                <h2>Registrar ingreso de materia prima</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Recepción de Leche</h3>
+                            <p>Registre el ingreso de un nuevo lote de leche</p>
+                            <a href="RecepcionLeche.html"><button type="button">IR</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Recepción de Insumos</h3>
+                            <p>Registre el ingreso de un nuevo lote de insumos</p>
+                            <a href="RecepcionInsumos.html"><button type="button">IR</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Recepción de Envases</h3>
+                            <p>Registre el ingreso de un nuevo lote de envases</p>
+                            <a href="RecepcionEnvases.html"><button type="button">IR</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2> Últimos registros </h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Materia Prima</th>
+                            <th>Proveedor</th>
+                            <th>Fecha de Ingreso</th>
+                            <th>Cantidad (KG / L)</th>
+                            <th>Lote</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Leche</td>
+                            <td>ProveedorLeche</td>
+                            <td>2023-01-15</td>
+                            <td>40 L</td>
+                            <td>LOT234</td>
+                            <td class="actions">
+                                <button class="ver">Ver</button>
+                                <button class="editar">Editar</button>
+                                <button class="eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sorbato</td>
+                            <td>ProveedorInsumo</td>
+                            <td>2024-10-18</td>
+                            <td>15 KG</td>
+                            <td>LOT-012</td>
+                            <td class="actions">
+                                <button class="ver">Ver</button>
+                                <button class="editar">Editar</button>
+                                <button class="eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Leche</td>
+                            <td>ProveedorLeche</td>
+                            <td>2023-01-15</td>
+                            <td>40 L</td>
+                            <td>LOT234</td>
+                            <td class="actions">
+                                <button class="ver">Ver</button>
+                                <button class="editar">Editar</button>
+                                <button class="eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Azúcar</td>
+                            <td>ProveedorAzucar</td>
+                            <td>2023-02-20</td>
+                            <td>100 kg</td>
+                            <td>LOT567</td>
+                            <td class="actions">
+                                <button class="ver">Ver</button>
+                                <button class="editar">Editar</button>
+                                <button class="eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bicarbonato</td>
+                            <td>ProveedorBicarbonato</td>
+                            <td>2023-03-05</td>
+                            <td>25 kg</td>
+                            <td>LOT789</td>
+                            <td class="actions">
+                                <button class="ver">Ver</button>
+                                <button class="editar">Editar</button>
+                                <button class="eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Leche</td>
+                            <td>ProveedorLechePlus</td>
+                            <td>2023-04-10</td>
+                            <td>60 L</td>
+                            <td>LOT345</td>
+                            <td class="actions">
+                                <button class="ver">Ver</button>
+                                <button class="editar">Editar</button>
+                                <button class="eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
