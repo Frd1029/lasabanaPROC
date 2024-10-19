@@ -9,14 +9,15 @@
 <body>
 
     <div class="container">
+        <!-- Dashboard -->
         <div class="sidebar">
             <h2>Menú</h2>
             <ul>
-                <li class="active"><a href="#">Recepción</a>
+                <li><a href="../Recepción/Recepcion.html">Recepción</a>
                     <ul class="submenu">
-                        <li><a href="/HTML/Recepción/RecepcionLeche.html">Recepción de leche</a></li>
-                        <li><a class="act" href="/HTML/Recepción/RecepcionInsumos.html">Recepción de insumos</a></li>
-                        <li><a href="#">Recepción de envases</a></li>
+                        <li><a href="../Recepción/RecepcionLeche.html">Recepción de leche</a></li>
+                        <li><a href="../Recepción/RecepcionInsumos.html">Recepción de insumos</a></li>
+                        <li><a href="../Recepción/RecepcionEnvases.html">Recepción de envases</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Producción</a></li>
@@ -27,52 +28,60 @@
             </ul>
         </div>
 
-        <div class="main-content">
-            <header>
-                <h1>Agregar Proveedor</h1>
-            </header>
+        <!-- Formulario de Registro -->
+        <div class="content">
+            <h1>REGISTRAR PROVEEDORES</h1>
+            <div class="form-container">
+                <h2>Ingresar datos deL proveedor</h2>
+                <form class="horizontal-form">
+                    
+                    <!-- Nombre -->
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Ingrese el nombre del proveedor" required>
+                    </div>
 
-            <main>
-                <div class="form-container">
-                    <form>
-                        <div class="recuadro">
-                            <input type="text" name="id_proveedor" required="">
-                            <label>ID Proveedor</label>
-                        </div>
-                        <div class="recuadro">
-                            <input type="text" name="nombre" required="">
-                            <label>Nombre del proveedor</label>
-                        </div>
-                        <div class="recuadro">
-                            <input type="text" name="contacto" required="">
-                            <label>Contacto del proveedor</label>
-                        </div>
-                        <div class="recuadro">
-                            <input type="text" name="insumo" required="">
-                            <label>Nombre del insumo</label>
-                        </div>
-                        <div class="recuadro">
-                            <input type="date" name="fecha_ingreso" required="">
-                            <label>Fecha de Ingreso</label>
-                        </div>
-                        <div class="recuadro">
-                            <input type="text" name="direccion" required="">
-                            <label>Dirección</label>
-                        </div>
-                        <div class="recuadro">
-                            <input type="email" name="correo" required="">
-                            <label>Correo</label>
-                        </div>
-                        <button id="agregar-nuevo" type="submit">
-                            Agregar
-                        </button>
-                    </form>
-                </div>
-            </main>
+                    <!-- Teléfono -->
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="number" name="contact" placeholder="Ingrese el teléfono del proveedor" required>
+                    </div>
 
-            <footer>
-                <p>&copy; 2023 La Sabana S.A.S.</p>
-            </footer>
+                    <!-- Dirección -->
+                    <div class="form-group">
+                        <label for="direction">Dirección</label>
+                        <input type="text" name="direction" placeholder="Ingrese la dirección del proveedor" required>
+                    </div>
+
+                    <!-- Materia Prima -->
+                    <div class="form-group">
+                        <label for="product">Materia Prima</label>
+                        <select id="product" name="product" required>
+                            <option value="" disabled selected>Selecciona una materia prima</option>
+                            <option value="Leche">LECHE</option>
+                            <option value="Azúcar">AZÁCAR</option>
+                            <option value="Insumos">INSUMOS</option>
+                        </select>
+                    </div>
+
+                    <!-- Estado -->
+                    <div class="form-group test-group">
+                        <label for="status">Estado</label>
+                        <div class="radio-container">
+                            <input type="radio" name="status" id="active" value="true" required>
+                            <label for="active">Activo</label>
+
+                            <input type="radio" name="status" id="no-active" value="false" required>
+                            <label for="no-active">No activo</label>
+                        </div>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <div class="form-group button-container">
+                        <button type="submit">Registrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
